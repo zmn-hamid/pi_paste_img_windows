@@ -1,0 +1,35 @@
+{
+  "name": "pi-clipboard-cleanup",
+  "version": "1.0.0",
+  "description": "Pi extension for manually removing temporary clipboard images",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "clipboard",
+    "windows",
+    "images"
+  ],
+  "files": [
+    "index.ts",
+    "cleanup.ts",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "test": "node --experimental-strip-types --test test/cleanup.test.ts"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": ">=1.5.0"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
